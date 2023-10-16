@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style>
+            .header{
+                padding: 30px;
+                text-align: center;
+background-image:url("pexels.webp");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+.topnav {
+    background-color:skyblue;
+    overflow:hidden;
+    width:100%;
+}
+.topnav a{
+    text-decoration:none;
+    text-align:center;
+    color:red;
+    float:left;
+    display:block;
+    padding:14px 16px;
+}
+.topnav a:hover
+{
+    background-color:#ddd;
+    color:black;
+}
+.leftcolumn
+{
+    float:left;
+    width:73%;
+}
+.rightcolumn
+{
+    float:left;
+    width:25%;
+    background-color:aqua;
+    padding-left:20px;
+}
+.fakeimg
+{
+background-image:url("download\ 1.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover; 
+}
+.fakeimg1
+{
+background-image:url("coffee1.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover; 
+}
+.card
+{
+    background-color:azure;
+    padding:20px;
+    margin-top:20px;
+}
+.row::after
+{
+      content:"";
+      display:table;
+      clear:both;
+}
+.footer{
+    padding:20px;
+    text-align:cente;
+    background:#ddd;
+    margin-top:20px;
+}
+
+@media screen and (max-width:800px){
+    .leftcolumn, .rightcolumn{
+        width:100%;
+        padding:0;
+    }
+}
+
+@media screen and (max-width:400px){
+    .topnav a{
+        float:100%;
+        width:0;
+    }
+}
+
+        </style>
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="header">
+     <h1>My Webpage</h1>
+     <p>Everyday is an Opportunity</p>
+        </div>
+
+        <div class="topnav">
+            <a href="">Home</a>
+        <a href="">About me</a>
+        <a style="float:right;" href="">Logout</a>
+        </div>
+        <div class=""row>
+            <div class="leftcolumn">
+                <div class="card">
+                    <h1>Coffee Shop</h1>
+                    <h5>Sep 14 2023</h5>
+                    <div class="fakeimg" style="height:200px">
+<p>  </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>Coffee </h1>
+                    <h5>Sep 14 2023</h5>
+                    <div class="fakeimg1" style="height:200px">
+<p>  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="Card">
+                    <h2>About Me</h2>
+                    <div class="fakeimg" style="height:100px;"></div>
+                    <p>Do not have equal talent</p>
+                </div>
+                <div class="card">
+                    <h3>Popular post</h3>
+                    <div class="fakeimg1" style="height:100px;"></div> <br>
+                    <div class="fakeimg" style="height:100px;"></div>
+                </div>
+                <div class="card">
+                     <h3>Follow Me</h3>
+                     <p>Some text..</p>
+                                 <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </body>
+</html>
